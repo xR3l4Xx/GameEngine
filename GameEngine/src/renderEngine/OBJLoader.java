@@ -48,8 +48,8 @@ public class OBJLoader {
 					Vector3f normal = new Vector3f(Float.parseFloat(currentLine[1]), Float.parseFloat(currentLine[2]), Float.parseFloat(currentLine[3]));
 					normals.add(normal);
 				}else if(line.startsWith("f ")){
-					textureArray = new float[textures.size() * 2];
-					normalsArray = new float[normals.size() * 2];
+					textureArray = new float[vertices.size() * 2];
+					normalsArray = new float[vertices.size() * 3];
 					break;
 				}
 			}
